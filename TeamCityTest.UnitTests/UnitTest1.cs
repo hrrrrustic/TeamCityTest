@@ -1,20 +1,24 @@
-using System;
-using Xunit;
+using NUnit.Framework;
 
 namespace TeamCityTest.UnitTests
 {
-    public class UnitTest1
+    public class Tests
     {
-        [Fact]
-        public void Test1()
+        [SetUp]
+        public void Setup()
         {
-            Assert.True(true);
         }
 
-        [Fact]
+        [Test]
+        public void Test1()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
         public void Test2()
         {
-            Assert.True(false);
+            Assert.Fail();
         }
     }
 }
