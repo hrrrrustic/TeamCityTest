@@ -18,7 +18,7 @@ namespace TeamCityTest
     {
         public Startup(IConfiguration configuration)
         {
-            throw new Exception();
+            throw new Exception();à
             Configuration = configuration;
         }
 
